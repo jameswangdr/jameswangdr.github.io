@@ -1,11 +1,22 @@
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,700,900";
 
-.img{
-    padding: 100px;
+#flick {
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
-
+img:hover {
+    
+  max-height: 100%;
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden;
+    transform: scale(1.02);
+    transition: all .8s;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -121,7 +132,6 @@ a[data-toggle="collapse"] {
 
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
     background: #6d7fcc;
 }
 
@@ -154,7 +164,7 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 #content {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     min-height: 100vh;
     transition: all 0.3s;
 }
@@ -226,16 +236,5 @@ a.article, a.article:hover {
         transform: rotate(-45deg) translate(1px, -1px);
     }
 
-}
-
-img:hover {
-    box-shadow: 0 0 20px 1px rgba(0, 0, 50, 0.5);
-    display: none;
-  max-height: 100%;
-  max-width: 100%;
-  text-align: center;
-  overflow: hidden;
-    transform: scale(1.2);
-    transition: all .5s;
 }
 
