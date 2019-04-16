@@ -1,5 +1,5 @@
 
-@import "https://fonts.googleapis.com/css?family=Raleway:400,700,900";
+@import "https://fonts.googleapis.com/css?family=Lato:400,700,900";
 
 #flick {
     position: relative;
@@ -8,27 +8,107 @@
     padding-left: 0px;
 }
 
+.about {
+    background-image: url(../img/rooftop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+}
+
+.index {
+    background-image: url(../img/tracks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+}
+
+.container h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 2em;
+    color: white;
+    padding-top: 25%;
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15)
+}
+
+.container p {
+    font-size: 1.7em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: white;
+    padding: 20% 10%;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 img:hover {
-    
-  max-height: 100%;
-  max-width: 100%;
-  text-align: center;
-  overflow: hidden;
+
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
     transform: scale(1.02);
     transition: all .8s;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     background: #fafafa;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
     font-weight: 400;
     line-height: 1.7em;
-    color: #999;
+    color: white;
 }
 
 a, a:hover, a:focus {
@@ -39,11 +119,10 @@ a, a:hover, a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: transparent;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
@@ -61,7 +140,7 @@ a, a:hover, a:focus {
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
------------------------------------------------------ */
+    ----------------------------------------------------- */
 
 .wrapper {
     display: flex;
@@ -69,7 +148,6 @@ a, a:hover, a:focus {
     align-items: stretch;
     perspective: 1500px;
 }
-
 
 #sidebar {
     min-width: 250px;
@@ -85,14 +163,15 @@ a, a:hover, a:focus {
     transform: rotateY(100deg);
 }
 
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #000;
+#sidebar .sidebar-header img{
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-}
+    }
 
 #sidebar ul p {
     color: #fff;
@@ -107,6 +186,7 @@ a, a:hover, a:focus {
     text-align: center;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #808080;
     background: #000;
@@ -116,7 +196,6 @@ a, a:hover, a:focus {
     color: #808080;
     background: #000;
 }
-
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -157,11 +236,9 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
-
-
 /* ---------------------------------------------------
     CONTENT STYLE
------------------------------------------------------ */
+    ----------------------------------------------------- */
 #content {
     width: 100%;
     padding: 10px;
@@ -170,32 +247,33 @@ a.article, a.article:hover {
 }
 
 #sidebarCollapse {
-    width: 40px;
-    height: 40px;
-    background: #f5f5f5;
-    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    cursor: no-drop;
 }
 
 #sidebarCollapse span {
-    width: 80%;
+    width: 100%;
     height: 2px;
     margin: 0 auto;
     display: block;
-    background: #555;
+    background: black;
     transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-    transition-delay: 0.2s;
+    transition-delay: 0.2s; 
 }
 
 #sidebarCollapse span:first-of-type {
     transform: rotate(45deg) translate(2px, 2px);
 }
+    
 #sidebarCollapse span:nth-of-type(2) {
     opacity: 0;
 }
+    
 #sidebarCollapse span:last-of-type {
     transform: rotate(-45deg) translate(1px, -1px);
 }
-
 
 #sidebarCollapse.active span {
     transform: none;
@@ -203,38 +281,43 @@ a.article, a.article:hover {
     margin: 5px auto;
 }
 
-
 /* ---------------------------------------------------
     MEDIAQUERIES
------------------------------------------------------ */
+    ----------------------------------------------------- */
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
         transform: rotateY(90deg);
     }
+        
     #sidebar.active {
         margin-left: 0;
         transform: none;
     }
+        
     #sidebarCollapse span:first-of-type,
+    
     #sidebarCollapse span:nth-of-type(2),
+    
     #sidebarCollapse span:last-of-type {
         transform: none;
         opacity: 1;
         margin: 5px auto;
     }
+        
     #sidebarCollapse.active span {
         margin: 0 auto;
     }
+        
     #sidebarCollapse.active span:first-of-type {
         transform: rotate(45deg) translate(2px, 2px);
     }
+        
     #sidebarCollapse.active span:nth-of-type(2) {
         opacity: 0;
     }
+        
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
     }
-
 }
-
