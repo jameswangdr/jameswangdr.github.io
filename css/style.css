@@ -23,16 +23,20 @@
 }
 
 .textback {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
 }
 
 div .container {
-    padding: 5%;
+    padding: 3%;
+}
+
+div .textback {
+    margin: 11%;
 }
 
 .container h1 {
     font-size: 4em;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 2em;
     color: white;
     padding-top: 25%;
@@ -53,25 +57,30 @@ div .container {
 }
 
 .container p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.6em;
     color: white;
-    padding: 1% 1%;
+    padding: 8% 10%;
     text-align: center;
-    text-shadow: 0px 0px 5px rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.6),
+    0px 0px 5px rgba(0,0,0,0.6);
 }
 
 h6 {
-    text-align: right;
     font-size: 1.2em;
     font-weight: 400;
-    line-height: 1.5em;
-    color: black;
-    padding: 5% 0%;
-    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    line-height: 1.2em;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.6),
+    0px 0px 5px rgba(0,0,0,0.6);
 
 }
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -124,9 +133,9 @@ body {
 
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 1.3em;
-    font-weight: 400;
-    line-height: 1.7em;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.8em;
     color: white;
 }
 
