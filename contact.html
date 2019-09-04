@@ -61,20 +61,22 @@
       </nav>
 
       <div class="container" id="contact">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First">
+        <form action="https://mailthis.to/jameswangdr@gmail.com" method="POST" encType="multipart/form-data">
+          <label for="name">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Name">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="_replyto" placeholder="@">
 
-        <label for="email">E-Mail</label>
-        <input type="email" id="email" name="email" placeholder="@">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="message" placeholder="(づ｡◕‿‿◕｡)づ"></textarea>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="(づ｡◕‿‿◕｡)づ"></textarea>
-
-        <a class="btn-lg btn-block" id="button" href="index.html" role="button">Submit</a>
-
+          <input type="hidden" name="_subject" value="Contact form submitted">
+          <input type="hidden" name="_after" value="https://jameswangdr.github.io/">
+          <input type="hidden" name="_honeypot" value="">
+          <input type="hidden" name="_confirmation" value="Thank you for reaching out! Talk to you soon.">
+          <button type="submit" class="btn-lg btn-block" id="button" value="Send" role="button">Submit</button>
+        </form>
       </div>
     </div>
 
@@ -90,14 +92,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-          $('#sidebar').toggleClass('active');
-          $(this).toggleClass('active');
-        });
-      });
-    </script>
+    <script src="js/app.js "></script>
 </body>
 
 </html>
