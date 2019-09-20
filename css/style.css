@@ -41,6 +41,15 @@ div .textback {
     margin: 11%;
 }
 
+.git-icon {
+    width: 20px;
+    margin: 0 0 9px 7px;
+}
+
+.work-title a {
+    display: inline-block ;
+}
+
 .container h1 {
     font-size: 4em;
     font-weight: 900;
