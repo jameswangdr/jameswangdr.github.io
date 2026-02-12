@@ -63,38 +63,23 @@
       </nav>
 
 
-      <div class="container" id="contact">
-        <form action="https://formspree.io/f/mgeprgob" method="POST">
-          <label for="name">Name</label>
-          <input type="text" name="name">
+<div class="container" id="contact">
+  <form method="POST" onsubmit="return false;">
 
-          <label for="email">E-mail</label>
-          <input type="email" name="_replyto">
+    <label for="name">Name</label>
+    <input type="text" name="name" disabled>
 
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="message" placeholder="(づ｡◕‿‿◕｡)づ"></textarea>
+    <label for="email">E-mail</label>
+    <input type="email" name="_replyto" disabled>
 
-          <div class="g-recaptcha" data-sitekey="6LcFZi4aAAAAAN9tzTAGZW0NPf7pUwBk21IfQo2_"></div>
-          <input type="submit" class="btn-lg btn-block" value="Send">
-        </form>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="message" placeholder="(づ｡◕‿‿◕｡)づ" disabled></textarea>
 
-        <!-- <form action="https://mailthis.to/jameswangdr@gmail.com" method="POST" encType="multipart/form-data">
-          <label for="name">Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Name">
+    <div class="g-recaptcha" data-sitekey="6LcFZi4aAAAAAN9tzTAGZW0NPf7pUwBk21IfQo2_"></div>
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="_replyto" placeholder="@">
-
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="message" placeholder="(づ｡◕‿‿◕｡)づ"></textarea>
-
-          <input type="hidden" name="_subject" value="Contact form submitted">
-          <input type="hidden" name="_after" value="https://jameswangdr.com/">
-          <input type="hidden" name="_honeypot" value="">
-          <input type="hidden" name="_confirmation" value="Thank you for reaching out! Talk to you soon.">
-          <button type="submit" class="btn-lg btn-block" id="button" value="Send" role="button">Submit</button>
-        </form> -->
-      </div>
+    <input type="submit" class="btn-lg btn-block" value="Contact Form Disabled" disabled>
+  </form>
+</div>
     </div>
 
     <!-- Optional JavaScript -->
